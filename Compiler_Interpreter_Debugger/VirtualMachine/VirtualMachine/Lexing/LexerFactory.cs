@@ -1,6 +1,6 @@
 ﻿
 namespace VirtualMachine.Lexing {
-    public static class LexerFactory {
+    internal static class LexerFactory {
 
         public static Lexer CreateLexer(string input) {
             var lex = new Lexer();

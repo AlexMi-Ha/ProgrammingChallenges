@@ -136,7 +136,7 @@ namespace VirtualMachine.Lexing {
 
         private void AddLexerMachines() {
             AddMachine(new NumberMachine());
-            AddMachine(new LabelMachine());
+            
             AddMachine(new WhitespaceMachine());
             AddKeywordMachine(":", TokenType.DOUBLECOLON);
 
@@ -187,6 +187,8 @@ namespace VirtualMachine.Lexing {
             AddKeywordMachine("RETURN", TokenType.RETURN);
             AddKeywordMachine("PUSH", TokenType.PUSH);
             AddKeywordMachine("POP", TokenType.POP);
+
+            AddMachine(new LabelMachine());
         }
     }
 }

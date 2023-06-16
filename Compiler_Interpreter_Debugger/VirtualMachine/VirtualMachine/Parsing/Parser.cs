@@ -78,6 +78,7 @@ namespace VirtualMachine.Parsing {
                     return ParseLabelInstruction();
 
                 case TokenType.HOLD:
+                    _lexer.Advance();
                     return new HoldInstruction();
 
                 case TokenType.IN:

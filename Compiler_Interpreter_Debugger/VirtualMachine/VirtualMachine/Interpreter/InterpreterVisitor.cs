@@ -25,6 +25,7 @@ namespace VirtualMachine.Interpreter {
             _labelAdresses = node.LabelAdresses;
             while(!SIG_HOLD && ProgramCounter < node.Instructions.Count) {
                 node.Instructions[ProgramCounter].AcceptVisitor(this);
+                ProgramCounter++;
             }
         }
 
@@ -69,13 +70,19 @@ namespace VirtualMachine.Interpreter {
         public void Visit(IOInstruction node) {
             switch(node.Type) {
                 case TokenType.IN:
-                    Akku = Console.Read();
+                    Console.Write("\n > ");
+                    var inp = Console.ReadLine();
+                    bool succ = int.TryParse(inp, out int val);
+                    if (succ)
+                        Akku = val;
+                    else
+                        Akku = inp?[0] ?? 0;
                     break;
                 case TokenType.OUT:
-                    Console.WriteLine(Akku);
+                    Console.Write(Akku);
                     break;
                 case TokenType.OUTCHAR:
-                    Console.WriteLine((char)Akku);
+                    Console.Write((char)Akku);
                     break;
                 default:
                     throw new Exception($"Unexpected Operator {node.Type}");

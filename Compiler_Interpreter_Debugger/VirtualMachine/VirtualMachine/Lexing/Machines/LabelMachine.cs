@@ -17,9 +17,14 @@ namespace VirtualMachine.Lexing.Machines {
                 .AddTransitionRange(letters, 'A', 'Z');
 
             letters
-                .AddTransitionRange(letters, 'a', 'z')
-                .AddTransitionRange(letters, 'A', 'Z')
-                .AddTransitionRange(letters, '0', '9');
+                .AddTransitionRange(end, 'a', 'z')
+                .AddTransitionRange(end, 'A', 'Z')
+                .AddTransitionRange(end, '0', '9');
+
+            end
+                .AddTransitionRange(end, 'a', 'z')
+                .AddTransitionRange(end, 'A', 'Z')
+                .AddTransitionRange(end, '0', '9');
         }
     }
 }

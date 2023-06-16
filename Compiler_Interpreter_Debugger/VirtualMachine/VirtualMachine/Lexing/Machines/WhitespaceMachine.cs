@@ -20,4 +20,4 @@ namespace VirtualMachine.Lexing.Machines {
         }
     }
 }
-}
+
