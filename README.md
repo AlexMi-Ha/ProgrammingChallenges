@@ -166,4 +166,4 @@ Here is my progress so far
 | 142           | Seam Carving                                                              |     ​🟨     |    ❌    | Practical                     |
 | 143           | Bayesian Filter                                                           |     ​🟨     |    ❌    | Practical                     |
 | 144           | WMS Viewer (not Web-Based)                                                |     ​​🟥     |    ❌    | Practical                     |
-| 145           | ASCII Digital Clock                                                       |     🟩     |    ❌    | Emulation/Modeling            |
+| 145           | ASCII Digital Clock                                                       |     🟩     |    ✔    | Emulation/Modeling            |
