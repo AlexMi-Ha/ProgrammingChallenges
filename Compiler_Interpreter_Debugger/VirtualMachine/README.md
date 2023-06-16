@@ -7,104 +7,112 @@ It has a Accumulator, a ValueStack, a CallStack, 1024 memory cells with each 32 
 ## Example Programms
 
 <details>
+    
 <summary>Hello World</summary>
+
 ```asm
 LOADC 72
-    OUTCHAR
-    LOADC 101
-    OUTCHAR
-    LOADC 108
-    OUTCHAR
-    OUTCHAR
-    LOADC 111
-    OUTCHAR
-    LOADC 32
-    OUTCHAR
-    LOADC 87
-    OUTCHAR
-    LOADC 111
-    OUTCHAR
-    LOADC 114
-    OUTCHAR
-    LOADC 108
-    OUTCHAR
-    LOADC 100
-    OUTCHAR
-    LOADC 33
-    OUTCHAR
+OUTCHAR
+LOADC 101
+OUTCHAR
+LOADC 108
+OUTCHAR
+OUTCHAR
+LOADC 111
+OUTCHAR
+LOADC 32
+OUTCHAR
+LOADC 87
+OUTCHAR
+LOADC 111
+OUTCHAR
+LOADC 114
+OUTCHAR
+LOADC 108
+OUTCHAR
+LOADC 100
+OUTCHAR
+LOADC 33
+OUTCHAR
 ```
 </details>
 
 <details>
+    
 <summary>Square Root</summary>
+
 ```asm
-    entry:
-        IN
-        JGT goodInput
-        HOLD
+entry:
+    IN
+    JGT goodInput
+    HOLD
 
-    goodInput:
-        STORE 0 
-        STORE 1
-        LOADC 0
-        STORE 2
-        JMP loop
+goodInput:
+    STORE 0 
+    STORE 1
+    LOADC 0
+    STORE 2
+    JMP loop
 
-    loop:
-        LOAD 0
-        DIVC 2
-        CMP 2
-        JLT end
+loop:
+    LOAD 0
+    DIVC 2
+    CMP 2
+    JLT end
 
-        LOAD 0
-        DIV 1
-        ADD 1
-        DIVC 2
-        STORE 1
+    LOAD 0
+    DIV 1
+    ADD 1
+    DIVC 2
+    STORE 1
 
-        LOAD 2
-        ADDC 1
-        STORE 2
-        JMP loop
-        
-    end:
-        LOAD 1
-        OUT
-        JMP entry
+    LOAD 2
+    ADDC 1
+    STORE 2
+    JMP loop
+    
+end:
+    LOAD 1
+    OUT
+    JMP entry
 ```
+
 </details>
 
 <details>
+    
 <summary>Factorial</summary>
+
 ```asm
-    entry:
-        IN
-        JGT goodInput
-        HOLD
+entry:
+    IN
+    JGT goodInput
+    HOLD
 
-    goodInput:
-        STORE 0
-        STORE 1
-        JMP loop
+goodInput:
+    STORE 0
+    STORE 1
+    JMP loop
 
-    loop:
-        LOAD 0
-        CMPC 1
-        JLE end
+loop:
+    LOAD 0
+    CMPC 1
+    JLE end
 
-        LOAD 0
-        SUBC 1
-        STORE 0
+    LOAD 0
+    SUBC 1
+    STORE 0
 
-        MUL 1
-        STORE 1
-        JMP loop
+    MUL 1
+    STORE 1
+    JMP loop
 
-    end:
-        LOAD 1
-        OUT
-        JMP entry
+end:
+    LOAD 1
+    OUT
+    JMP entry
 ```
+
 </details>
 
 ## Instruction set
