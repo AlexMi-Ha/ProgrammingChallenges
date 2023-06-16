@@ -65,7 +65,38 @@ end:
     JMP entry
 """;
 
-var parser = new Parser(LexerFactory.CreateLexer(assemblySqrt));
+string assemblyFactorial = """
+entry:
+    IN
+    JGT goodInput
+    HOLD
+
+goodInput:
+    STORE 0
+    STORE 1
+    JMP loop
+
+loop:
+    LOAD 0
+    CMPC 1
+    JLE end
+
+    LOAD 0
+    SUBC 1
+    STORE 0
+
+    MUL 1
+    STORE 1
+    JMP loop
+
+end:
+    LOAD 1
+    OUT
+    JMP entry
+
+""";
+
+var parser = new Parser(LexerFactory.CreateLexer(assemblyFactorial));
 var result = parser.Parse();
 result.AcceptVisitor(new InterpreterVisitor());
 
