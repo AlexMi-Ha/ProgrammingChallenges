@@ -25,6 +25,7 @@ namespace VirtualMachine.Interpreter {
             _labelAdresses = node.LabelAdresses;
             while(!SIG_HOLD && ProgramCounter < node.Instructions.Count) {
                 node.Instructions[ProgramCounter].AcceptVisitor(this);
+                NegativeFlag = Akku < 0;
                 ProgramCounter++;
             }
         }
