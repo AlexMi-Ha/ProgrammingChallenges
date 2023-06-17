@@ -58,8 +58,8 @@ Here is my progress so far
 | 041           | IP Tracking Visualization                                                 |     ​🟨     |    ❌    | Practical                     |
 | 042           | Port Scanner                                                              |     🟩     |    ❌    | Practical                     |
 | 043           | Old School Demo Effect (Plasma, Tunnel...)                                |     🟩     |    ❌    | Practical                     |
-| 044           | FizzBuzz                                                                  |     🟩     |    ❌    | Algorithmic                   |
-| 044 - Bonus   | FizzBuzz written in Assembly                                              |     ​🟨     |    ❌    | Algorithmic                   |
+| 044           | FizzBuzz                                                                  |     🟩     |    ✔    | Algorithmic                   |
+| 044 - Bonus   | FizzBuzz written in Assembly                                              |     ​🟨     |    ✔    | Algorithmic                   |
 | 045           | RPN Calculator                                                            |     🟩     |    ❌    | Algorithmic                   |
 | 046           | Count occurrences of character (Unicode Support)                          |     🟩     |    ❌    | Algorithmic                   |
 | 047           | Towers of Hanoi                                                           |     🟩     |    ❌    | Algorithmic                   |

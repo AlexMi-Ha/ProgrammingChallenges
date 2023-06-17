@@ -20,10 +20,14 @@ namespace VirtualMachine.Interpreter {
         public int ProgramCounter { get; set; } = 0;
 
         private Dictionary<string, int> _labelAdresses;
+
+        public bool Trace { get; set; } = false;
         
         public void Visit(ProgramNode node) {
             _labelAdresses = node.LabelAdresses;
-            while(!SIG_HOLD && ProgramCounter < node.Instructions.Count) {
+            while (!SIG_HOLD && ProgramCounter < node.Instructions.Count) {
+                if(Trace)
+                    Console.WriteLine($"[DEBUG] {node.Instructions[ProgramCounter]}\tAkku: {Akku}");
                 node.Instructions[ProgramCounter].AcceptVisitor(this);
                 NegativeFlag = Akku < 0;
                 ProgramCounter++;
@@ -120,7 +124,7 @@ namespace VirtualMachine.Interpreter {
                         ProgramCounter = _labelAdresses[node.Argument!];
                     break;
                 case TokenType.CALL:
-                    CallStack.Push(ProgramCounter + 1);
+                    CallStack.Push(ProgramCounter);
                     ProgramCounter = _labelAdresses[node.Argument!];
                     break;
                 case TokenType.RETURN:

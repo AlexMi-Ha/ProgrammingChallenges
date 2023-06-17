@@ -1,4 +1,4 @@
-# Ascii Digital Clock
+# 145 Ascii Digital Clock
 
 This is actually my first program I made in Go as I'm currently learning it as a new language - So don't expect the code to be too clean!
 

@@ -1,17 +1,22 @@
-﻿using VirtualMachine.Interpreter.Abstract;
+﻿
+using VirtualMachine.Interpreter.Abstract;
 using VirtualMachine.Lexing.Tokens;
 
 namespace VirtualMachine.Parsing.Nodes.Instructions {
-    internal class IOInstruction : Node {
+    internal class StackInstruction : Node {
 
         public TokenType Type { get; private set; }
 
-        public IOInstruction(TokenType type) {
+        public StackInstruction(TokenType type) {
             Type = type;
         }
 
         public override void AcceptVisitor(IInstrVisitor visitor) {
             visitor.Visit(this);
+        }
+
+        public override string ToString() {
+            return $"{Type}";
         }
     }
 }

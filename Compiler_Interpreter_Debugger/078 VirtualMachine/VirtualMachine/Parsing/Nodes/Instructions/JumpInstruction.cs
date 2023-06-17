@@ -16,5 +16,9 @@ namespace VirtualMachine.Parsing.Nodes.Instructions {
         public override void AcceptVisitor(IInstrVisitor visitor) {
             visitor.Visit(this);
         }
+
+        public override string ToString() {
+            return $"{Type} {Argument ?? ""}";
+        }
     }
 }
