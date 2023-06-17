@@ -6,7 +6,7 @@
 This is my take on all the challenges of this image I found browsing the
 Internet. It seemed really interesting for me to try and beat some challenges
 and I decided to create this repo to write some code for those challenges. I
-will be solving them in no pre-defined order, with the languages I think best fit the problem.
+will be solving them in no pre-defined order. I want to diversify the languages I'm comfortable in using, so I will be solving challenges in many different languages! 
 
 Here is my progress so far
 
