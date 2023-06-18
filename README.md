@@ -85,7 +85,7 @@ Here is my progress so far
 | 066           | Text to Hexadecimal & Binary Converter                                    |     🟩     |    ❌    | Algorithmic                   |
 | 067           | Calculate the first 1000 digits of $\pi$ iteratively                      |     ​🟨     |    ❌    | Algorithmic                   |
 | 068           | Sierpinski Triangle                                                       |     🟩     |    ❌    | Algorithmic                   |
-| 069           | Mandelbrot Set                                                            |     ​🟨     |    ❌    | Algorithmic                   |
+| 069           | Mandelbrot Set                                                            |     ​🟨     |    ✔    | Algorithmic                   |
 | 070           | OpenAI Gym Project                                                        |     ​​🟥     |    ❌    | Artificial Intelligence       |
 | 071           | AI for Rogue-likes                                                        |     ​🟨     |    ❌    | Artificial Intelligence       |
 | 072           | Sudoku or n-Puzzle Solver using A* algorithm                              |     ​🟨     |    ❌    | Artificial Intelligence       |
