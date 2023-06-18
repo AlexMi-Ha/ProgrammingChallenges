@@ -58,8 +58,8 @@ Here is my progress so far
 | 041           | IP Tracking Visualization                                                 |     ​🟨     |    ❌    | Practical                     |
 | 042           | Port Scanner                                                              |     🟩     |    ❌    | Practical                     |
 | 043           | Old School Demo Effect (Plasma, Tunnel...)                                |     🟩     |    ❌    | Practical                     |
-| 044           | FizzBuzz                                                                  |     🟩     |    ✔    | Algorithmic                   |
-| 044 - Bonus   | FizzBuzz written in Assembly                                              |     ​🟨     |    ✔    | Algorithmic                   |
+| 044           | [FizzBuzz](Algorithmic/044%20Fizzbuzz)                                                                  |     🟩     |    ✔    | Algorithmic                   |
+| 044 - Bonus   | [FizzBuzz written in Assembly](Algorithmic/044%20Fizzbuzz)                                              |     ​🟨     |    ✔    | Algorithmic                   |
 | 045           | RPN Calculator                                                            |     🟩     |    ❌    | Algorithmic                   |
 | 046           | Count occurrences of character (Unicode Support)                          |     🟩     |    ❌    | Algorithmic                   |
 | 047           | Towers of Hanoi                                                           |     🟩     |    ❌    | Algorithmic                   |
@@ -85,7 +85,7 @@ Here is my progress so far
 | 066           | Text to Hexadecimal & Binary Converter                                    |     🟩     |    ❌    | Algorithmic                   |
 | 067           | Calculate the first 1000 digits of $\pi$ iteratively                      |     ​🟨     |    ❌    | Algorithmic                   |
 | 068           | Sierpinski Triangle                                                       |     🟩     |    ❌    | Algorithmic                   |
-| 069           | Mandelbrot Set                                                            |     ​🟨     |    ✔    | Algorithmic                   |
+| 069           | [Mandelbrot Set](Algorithmic/069%20Mandelbrot%20Set)                                                            |     ​🟨     |    ✔    | Algorithmic                   |
 | 070           | OpenAI Gym Project                                                        |     ​​🟥     |    ❌    | Artificial Intelligence       |
 | 071           | AI for Rogue-likes                                                        |     ​🟨     |    ❌    | Artificial Intelligence       |
 | 072           | Sudoku or n-Puzzle Solver using A* algorithm                              |     ​🟨     |    ❌    | Artificial Intelligence       |
@@ -94,7 +94,7 @@ Here is my progress so far
 | 075           | Real Neural Network                                                       |     ​🟨     |    ❌    | Artificial Intelligence       |
 | 076           | Convolutional Neural Network (using TensorFlow, e.g.)                     |     ​🟨     |    ❌    | Artificial Intelligence       |
 | 077           | Convolutional Neural Network (from scratch)                               |     ​​🟥     |    ❌    | Artificial Intelligence       |
-| 078           | "Hello World" on a Virtual Machine                                        |     ​🟨     |    ✔    | Compiler/Interpreter/Debugger |
+| 078           | ["Hello World" on a Virtual Machine](Compiler_Interpreter_Debugger/078%20VirtualMachine)                                        |     ​🟨     |    ✔    | Compiler/Interpreter/Debugger |
 | 079           | Basic Bootloader (with extended file system)                              |     ​​​🟪     |    ❌    | Compiler/Interpreter/Debugger |
 | 080           | Terminal Shell (Executable Binaries, Pipe System...)                      |     ​🟨     |    ❌    | Compiler/Interpreter/Debugger |
 | 080 - Bonus   | Terminal Shell but GUI                                                    |     ​​🟥     |    ❌    | Compiler/Interpreter/Debugger |
@@ -166,4 +166,4 @@ Here is my progress so far
 | 142           | Seam Carving                                                              |     ​🟨     |    ❌    | Practical                     |
 | 143           | Bayesian Filter                                                           |     ​🟨     |    ❌    | Practical                     |
 | 144           | WMS Viewer (not Web-Based)                                                |     ​​🟥     |    ❌    | Practical                     |
-| 145           | ASCII Digital Clock                                                       |     🟩     |    ✔    | Emulation/Modeling            |
+| 145           | [ASCII Digital Clock](Emulation_Modeling/145%20ASCII%20Digital%20Clock)                                                       |     🟩     |    ✔    | Emulation/Modeling            |
