@@ -10,7 +10,7 @@ $z,c$ ϵ $ℂ$, $z_0 = 0$, $c = x + iy$
 In my implementation *"diverge"* is defined as $abs(z) \ge 2$
 
 ```java
-void mandelbrot(double x, double y) {
+int mandelbrot(double x, double y) {
     // scale
     x = reStart + (x / width) * (reEnd - reStart);
     y = imagStart + (y / height) * (imagEnd - imagStart);
