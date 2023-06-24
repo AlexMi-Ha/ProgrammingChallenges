@@ -23,31 +23,29 @@ func main() {
 	scanner := bufio.NewReader(os.Stdin)
 	for {
 		fmt.Print(workingDir + " $ ")
-		if true {
-			input, errs := scanner.ReadString('\n')
-			if errs != nil {
-				fmt.Println()
-				continue
-			}
-			if strings.TrimSpace(input) == "" {
-				fmt.Println()
-				continue
-			}
-			if strings.TrimSpace(strings.ToLower(input)) == "exit" {
-				return
-			}
-			cmd, err := parseInput(strings.TrimSpace(input))
-			if err != nil {
-				fmt.Printf("Terminal: %v\n", err.Error())
-				continue
-			}
+		input, errs := scanner.ReadString('\n')
+		if errs != nil {
+			fmt.Println()
+			continue
+		}
+		if strings.TrimSpace(input) == "" {
+			fmt.Println()
+			continue
+		}
+		if strings.TrimSpace(strings.ToLower(input)) == "exit" {
+			return
+		}
+		cmd, err := parseInput(strings.TrimSpace(input))
+		if err != nil {
+			fmt.Printf("Terminal: %v\n", err.Error())
+			continue
+		}
 
-			err = executeProgram(cmd)
-			process = nil
-			if err != nil {
-				fmt.Printf("Terminal: %v\n", err.Error())
-				continue
-			}
+		err = executeProgram(cmd)
+		process = nil
+		if err != nil {
+			fmt.Printf("Terminal: %v\n", err.Error())
+			continue
 		}
 	}
 }
