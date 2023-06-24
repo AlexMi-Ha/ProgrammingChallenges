@@ -62,7 +62,7 @@ Here is my progress so far
 | 044 - Bonus   | [FizzBuzz written in Assembly](Algorithmic/044%20Fizzbuzz)                                              |     ​🟨     |    ✔    | Algorithmic                   |
 | 045           | RPN Calculator                                                            |     🟩     |    ❌    | Algorithmic                   |
 | 046           | Count occurrences of character (Unicode Support)                          |     🟩     |    ❌    | Algorithmic                   |
-| 047           | Towers of Hanoi                                                           |     🟩     |    ❌    | Algorithmic                   |
+| 047           | [Towers of Hanoi](Algorithmic/047%20Tower%20of%20Hanoi)                                                           |     🟩     |    ✔    | Algorithmic                   |
 | 048           | Music Visualizer                                                          |     ​🟨     |    ❌    | Algorithmic                   |
 | 049           | Unicode Converter (UTF-8, 16LE, 32LE & 32BE)                              |     ​🟨     |    ❌    | Algorithmic                   |
 | 050           | Calculate the first n digits of π (pi)                                    |     🟩     |    ❌    | Algorithmic                   |
