@@ -112,7 +112,7 @@ public class LevelGeneration {
             }
             checkPos[0] = x;
             checkPos[1] = y;
-        } while(posTaken(checkPos) || x < 0 || x >= 2 * gridSizeX || y < 0 || y >= 2 * gridSizeY); // Solange besetzt oder out of map
+        } while(posTaken(checkPos) || x < 0 || x >= 2 * gridSizeX || y < 0 || y >= 2 * gridSizeY); // while pos taken or outofmap
         
         return checkPos;
     }
