@@ -53,7 +53,7 @@ public class LevelGeneration {
         try {
             saveMapImg();
         } catch(IOException ex) {
-            System.out.println("<LevelGeneration> Fehler beim erstellen von map.png");
+            System.out.println("<LevelGeneration> Error when writing to map.png");
         }
     }
 
@@ -79,7 +79,7 @@ public class LevelGeneration {
                     iter++;
                 } while(numberOfNeighbors(checkPos) > 1 && iter < 100);
                 if(iter >= 50)
-                    System.out.println("<LevelGeneration> Kein Raum mit weniger als " + numberOfNeighbors(checkPos) + "Nachbarn");
+                    System.out.println("<LevelGeneration> No room with less than " + numberOfNeighbors(checkPos) + " neighbors");
             }
 
             rooms[checkPos[0]][checkPos[1]] = new Room(toGameCoords(checkPos), pickRandomRoomType());
