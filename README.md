@@ -96,7 +96,7 @@ Here is my progress so far
 | 077           | Convolutional Neural Network (from scratch)                               |     ​​🟥     |    ❌    | Artificial Intelligence       |
 | 078           | ["Hello World" on a Virtual Machine](Compiler_Interpreter_Debugger/078%20VirtualMachine)                                        |     ​🟨     |    ✔    | Compiler/Interpreter/Debugger |
 | 079           | Basic Bootloader (with extended file system)                              |     ​​​🟪     |    ❌    | Compiler/Interpreter/Debugger |
-| 080           | Terminal Shell (Executable Binaries, Pipe System...)                      |     ​🟨     |    ❌    | Compiler/Interpreter/Debugger |
+| 080           | [Terminal Shell (Executable Binaries, Pipe System...)](Compiler_Interpreter_Debugger/080%20Terminal)                      |     ​🟨     |    ✔    | Compiler/Interpreter/Debugger |
 | 080 - Bonus   | Terminal Shell but GUI                                                    |     ​​🟥     |    ❌    | Compiler/Interpreter/Debugger |
 | 081           | HTML & JavaScript Debugger                                                |     ​🟨     |    ❌    | Compiler/Interpreter/Debugger |
 | 082           | Interpreted LISP-Like Programming Language                                |     ​🟨     |    ❌    | Compiler/Interpreter/Debugger |
